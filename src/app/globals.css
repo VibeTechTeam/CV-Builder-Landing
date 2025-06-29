@@ -1,2 +1,16 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  /* Custom colors */
+  --color-accent-500: #e17100;
+}
+
+@layer base {
+  :root {
+    --content-width: 1360px;
+  }
+
+  .section-container {
+    @apply mx-auto max-w-[var(--content-width)] px-4 2xl:px-0;
+  }
+}
