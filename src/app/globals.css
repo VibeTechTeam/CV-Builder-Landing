@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   /* Custom colors */
@@ -12,5 +12,8 @@
 
   .section-container {
     @apply mx-auto max-w-[var(--content-width)] px-4 2xl:px-0;
+  }
+  button {
+    cursor: pointer;
   }
 }

@@ -1,4 +1,4 @@
-import { HowItWorksSection } from '@/components';
+import { HowItWorksSection } from "@/components";
 
 export default function Home() {
   return (
