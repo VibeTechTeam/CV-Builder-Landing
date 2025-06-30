@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +36,7 @@ export const Header = () => {
             : {}
         }
       >
-        <img src='/icon-logo.svg' alt='Logo' style={{ cursor: "pointer" }} />
+        <Image src='/icon-logo.svg' alt='Logo' style={{ cursor: "pointer" }} width={96} height={54}/>
 
         {/* Navigation */}
         <nav className='flex-1 mx-8 hidden min-[901px]:flex'>
