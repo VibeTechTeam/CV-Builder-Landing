@@ -11,17 +11,17 @@ export const MainSection = () => {
   return (
     <section className='relative pt-20 pb-28'>
       <div className='relative'>
-        <div className='space-y-8 pl-20 pr-4'>
-          <div className='relative max-w-4xl'>
-            <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase text-black relative'>
+        <div className='space-y-8 px-6 md:px-20'>
+          <div className='max-w-4xl'>
+            <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase text-black'>
               Resumes Built
               <br />
-              <span className='text-orange-500'>to</span> Impress
-              <span
-                className='absolute bottom-4 rounded-full bg-gradient-to-b from-orange-200/80 to-orange-100/40 px-6 py-3 text-slate-900 text-xl md:text-2xl font-normal leading-tight tracking-normal capitalize shadow-sm'
-                style={{ right: "13.75rem" }} // заменили right-55
-              >
-                With AI
+              <span className='flex flex-wrap items-center gap-4'>
+                <span className='text-orange-500'>to</span>
+                <span>Impress</span>
+                <span className='rounded-full bg-gradient-to-b from-orange-200/80 to-orange-100/40 px-6 py-3 text-slate-900 text-xl md:text-2xl font-normal leading-tight tracking-normal capitalize shadow-sm'>
+                  With AI
+                </span>
               </span>
             </h1>
           </div>
@@ -72,7 +72,7 @@ export const MainSection = () => {
           </div>
         </div>
 
-        <div className='absolute top-[-25%] right-0 max-w-full overflow-hidden'>
+        <div className='absolute top-[-25%] right-0 max-w-full overflow-hidden  hidden min-[1501px]:block'>
           <div className='relative w-full'>
             <Image
               src='/img-laptop.png'

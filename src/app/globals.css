@@ -16,4 +16,14 @@
   button {
     cursor: pointer;
   }
+  @media (max-width: 1200px) {
+  .hide-below-1200 {
+    display: none;
+  }
+  .img-responsive {
+    width: 80%; /* например, меняем размер */
+    height: auto;
+  }
+}
+
 }
