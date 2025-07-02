@@ -82,13 +82,18 @@ export const HowItWorksSection = () => {
                 </div>
             </div>
         </section>
-        <section className="rounded-t-4xl overflow-hidden">
+        <section
+        style={{
+            backgroundImage: "url('/third-section-bg.png')",
+        }}
+        className="bg-white-first rounded-t-4xl overflow-hidden"
+        >
             <div className="flex items-center">
                 <Image className="relative left-48" src={ThirdSectionImage} alt="Third section image" />
                 <div className="flex flex-col gap-6">
-                    <p className="font-semibold text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
+                    <p className="font-noto-sans  font-semibold text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
                     <div style={{ width: '464px' }}>
-                        <p className="font-medium text-3xl"><span className="text-orange-400">Create</span>, edit, and download<br/>your <span className="text-orange-400">resume</span> right<br/>from your <span className="text-orange-400">phone</span></p>
+                        <p className="font-noto-sans  text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
                     </div>
                 </div>
             </div>
