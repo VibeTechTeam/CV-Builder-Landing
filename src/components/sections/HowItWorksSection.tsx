@@ -22,6 +22,7 @@ export const HowItWorksSection = () => {
 
   return (
     <section
+    id="how-it-works"
       style={{
         backgroundImage: "url('/how-it-works-bg.jpg')",
       }}
