@@ -11,6 +11,7 @@
   --height-section-first: 880px;
   /*Custom width*/
   --width-block-first: 555px;
+  --width-image-first: 1271.11px;
 }
 
 @layer base {
