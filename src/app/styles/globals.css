@@ -9,6 +9,8 @@
   --font-noto-sans: "Noto Sans", sans-serif;
   /*Custom heights*/
   --height-section-first: 880px;
+  /*Custom width*/
+  --width-block-first: 555px;
 }
 
 @layer base {

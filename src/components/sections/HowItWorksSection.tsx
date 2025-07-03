@@ -89,9 +89,9 @@ export const HowItWorksSection = () => {
         className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first"
         >
             <div className="flex items-center justify-center">
-                <Image className="relative left-48 bottom-36" src={ThirdSectionImage} alt="Third section image" />
-                <div className="flex flex-col gap-6 relative bottom-48 right-8">
-                    <p className="font-noto-sans font-semibold text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
+                <Image className="relative bottom-36 left-48 lg:bottom-32 lg:left-9" src={ThirdSectionImage} alt="Third section image" />
+                <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:right-20">
+                    <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p>
                     <div style={{ width: '464px' }}>
                         <p className="font-noto-sans  text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
                     </div>
