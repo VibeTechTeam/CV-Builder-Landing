@@ -9,7 +9,7 @@ export const MainSection = () => {
   ];
 
   return (
-    <section className='relative pt-20 pb-28'>
+    <section className='relative pt-20 pb-28' id='main'>
       <div className='relative'>
         <div className='space-y-8 px-6 md:px-20'>
           <div className='max-w-4xl'>
