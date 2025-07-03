@@ -5,7 +5,10 @@
   /* Custom colors */
   --color-accent-500: #e17100;
   --color-white-first: #f4f4f4;
+  /*Fonts family*/
   --font-noto-sans: "Noto Sans", sans-serif;
+  /*Custom heights*/
+  --height-section-first: 880px;
 }
 
 @layer base {
