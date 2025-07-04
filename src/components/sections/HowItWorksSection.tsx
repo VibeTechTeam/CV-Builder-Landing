@@ -89,13 +89,20 @@ export const HowItWorksSection = () => {
         className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first"
         >
             <div className="flex items-center justify-center">
-                {/* <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" /> */}
-                {/* <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 lg:w-image-first xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" /> */}
-                <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" />
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 lg:w-96 xl:bottom-32 xl:left-16" > */}
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
+                <div className="relative w-full lg:w-[384px] xl:w-[880px]" >
+                    {/* <Image className="max-w-none  " src={ThirdSectionImage} alt="Third section image" /> */}
+                    <Image className="w-full h-auto max-w-none" src={ThirdSectionImage} alt="Third section image" />
+                </div>
                 {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-16 lg:right-12 xl:bottom-40 xl:right-24"> */}
-                <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24 xl:">
-                    {/* <p className="font-noto-sans font-semibold text-5xl w-block-first lg:text-4xl">Unlock Your Advantage<br/>with Foliofy</p> */}
-                    <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p>
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24 xl:"> */}
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24"> */}
+                <div className="flex flex-col gap-6 w-full lg:w-[464px]">
+                    {/* <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p> */}
+                    <p className="font-noto-sans font-semibold text-5xl lg:text-4xl">Unlock Your Advantage<br/>with Foliofy</p>
                     <div style={{ width: '464px' }}>
                         <p className="font-noto-sans text-3xl lg:text-2xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
                     </div>

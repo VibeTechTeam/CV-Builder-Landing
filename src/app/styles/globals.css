@@ -15,7 +15,8 @@
   --width-image-first: 880px;
   --width-image-second: 1000px;
   --width-image-third: 1271.11px;
-  --width-xl1440: 1440px;
+  /*Custom breakpoints*/
+  --breakpoint-xl1440: 90rem;
 }
 
 @layer base {
