@@ -89,8 +89,11 @@ export const HowItWorksSection = () => {
         className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first"
         >
             <div className="flex items-center justify-center">
-                <Image className="w-image-first h-image-first max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" />
-                <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-16 lg:right-12 xl:bottom-40 xl:right-24">
+                {/* <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" /> */}
+                {/* <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 lg:w-image-first xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" /> */}
+                <Image className="w-image-second h-image-second max-w-none  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" src={ThirdSectionImage} alt="Third section image" />
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-16 lg:right-12 xl:bottom-40 xl:right-24"> */}
+                <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24 xl:">
                     {/* <p className="font-noto-sans font-semibold text-5xl w-block-first lg:text-4xl">Unlock Your Advantage<br/>with Foliofy</p> */}
                     <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p>
                     <div style={{ width: '464px' }}>
