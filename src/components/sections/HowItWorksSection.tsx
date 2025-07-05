@@ -86,19 +86,14 @@ export const HowItWorksSection = () => {
         style={{
             backgroundImage: "url('/third-section-bg.png')",
         }}
-        className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first"
+        className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first  lg:h-[400px] xl:h-[800px]"
         >
             <div className="flex items-center justify-center">
-                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
-                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
-                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 lg:w-96 xl:bottom-32 xl:left-16" > */}
                 {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
                 <div className="relative w-full lg:w-[384px] xl:w-[880px]" >
                     {/* <Image className="max-w-none  " src={ThirdSectionImage} alt="Third section image" /> */}
                     <Image className="w-full h-auto max-w-none" src={ThirdSectionImage} alt="Third section image" />
                 </div>
-                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-16 lg:right-12 xl:bottom-40 xl:right-24"> */}
-                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24 xl:"> */}
                 {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24"> */}
                 <div className="flex flex-col gap-6 w-full lg:w-[464px]">
                     {/* <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p> */}
