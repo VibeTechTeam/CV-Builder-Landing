@@ -1,11 +1,12 @@
-import { CVProcessSection, HowItWorksSection, MainSection } from "@/components";
+import { HowItWorksSection, TemplateSection } from '@/components';
 
 export default function Home() {
   return (
     <div>
       <MainSection />
       <HowItWorksSection />
-      <CVProcessSection/>
+      <div className="h-screen w-full" />
+      <TemplateSection />
     </div>
   );
 }
