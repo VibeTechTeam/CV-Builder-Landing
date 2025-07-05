@@ -40,10 +40,14 @@
 
 @layer components {
   .btn {
-    @apply font-medium text-lg px-8 py-4 rounded-full transition-opacity duration-300 flex items-center gap-3 md:mx-0 mx-auto cursor-pointer;
+    @apply font-medium text-lg px-8 py-4 rounded-full transition-all duration-300 flex items-center gap-3 md:mx-0 mx-auto cursor-pointer;
 
     &:hover {
-      @apply opacity-80;
+      @apply -translate-y-1;
+    }
+
+    &:active {
+      @apply -translate-y-0.5;
     }
 
     &:disabled {
