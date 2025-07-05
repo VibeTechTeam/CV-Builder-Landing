@@ -90,12 +90,14 @@ export const HowItWorksSection = () => {
         >
             <div className="flex items-center justify-center">
                 {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
-                <div className="relative w-full lg:w-[384px] xl:w-[880px]" >
-                    {/* <Image className="max-w-none  " src={ThirdSectionImage} alt="Third section image" /> */}
-                    <Image className="w-full h-auto max-w-none" src={ThirdSectionImage} alt="Third section image" />
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 md:w-[100px] lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" > */}
+                <div className="w-image-second h-image-second  relative bottom-36 left-48 md:w-[1000px] lg:bottom-20 lg:left-9 xl:bottom-32 xl:left-16" >
+                {/* <div className="relative w-full lg:w-[384px] xl:w-[880px]" > */}
+                    {/* <Image className="h-auto max-w-none" src={ThirdSectionImage} alt="Third section image" /> */}
+                    <Image className="w-full h-auto object-contain" src={ThirdSectionImage} alt="Third section image" />
                 </div>
-                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24"> */}
-                <div className="flex flex-col gap-6 w-full lg:w-[464px]">
+                <div className="flex flex-col gap-6 relative bottom-48 right-28 lg:bottom-14 lg:right-12 xl:bottom-40 xl:right-24">
+                {/* <div className="flex flex-col gap-6 w-full lg:w-[464px]"> */}
                     {/* <p className="font-noto-sans font-semibold text-5xl w-block-first">Unlock Your Advantage<br/>with Foliofy</p> */}
                     <p className="font-noto-sans font-semibold text-5xl lg:text-4xl">Unlock Your Advantage<br/>with Foliofy</p>
                     <div style={{ width: '464px' }}>
