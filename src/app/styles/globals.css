@@ -17,6 +17,7 @@
   --width-image-third: 1271.11px;
   /*Custom breakpoints*/
   --breakpoint-xl1440: 90rem;
+  --breakpoint-xl1536: 96rem;
 }
 
 @layer base {
