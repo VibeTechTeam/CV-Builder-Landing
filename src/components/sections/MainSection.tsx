@@ -10,8 +10,8 @@ export const MainSection = () => {
 
   return (
     <section className='relative pt-20 pb-28' id='main'>
-      <div className='relative'>
-        <div className='space-y-8 px-6 md:px-20'>
+      <div className='relative section-container'>
+        <div className='space-y-8 '>
           <div className='max-w-4xl'>
             <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase text-black'>
               Resumes Built
@@ -67,18 +67,30 @@ export const MainSection = () => {
               aria-label='Create your free resume'
             >
               <span>Create my FREE resume</span>
-              <span className='mt-1'>&gt;</span>
+              <svg
+                className='mt-1'
+                xmlns='http://www.w3.org/2000/svg'
+                width='8'
+                height='12'
+                viewBox='0 0 8 12'
+                fill='none'
+              >
+                <path
+                  d='M4.6 6L0 1.4L1.4 0L7.4 6L1.4 12L0 10.6L4.6 6Z'
+                  fill='#020618'
+                />
+              </svg>
             </button>
           </div>
         </div>
 
-        <div className='absolute top-[-25%] right-0 max-w-full overflow-hidden  hidden min-[1501px]:block'>
+        <div className='absolute top-0 right-0 max-w-full overflow-hidden hidden min-[1301px]:block'>
           <div className='relative w-full'>
             <Image
               src='/img-laptop.png'
               alt='Resume builder interface on laptop'
-              width={1420}
-              height={1065}
+              width={640}
+              height={650}
               className='w-full h-auto object-contain'
               priority
             />

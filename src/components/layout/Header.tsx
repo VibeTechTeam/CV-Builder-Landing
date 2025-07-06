@@ -6,7 +6,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItemStyles =
-    "text-[#62748E] font-inter font-bold text-lg leading-6 tracking-normal hover:bg-amber-50 hover:text-black rounded-[32px] px-6 py-3 transition-colors duration-300 ease-in-out cursor-pointer";
+    "text-[#62748E] font-inter font-bold text-lg leading-6 tracking-normal whitespace-nowrap hover:bg-amber-50 hover:text-black rounded-[32px] px-6 py-3 transition-colors duration-300 ease-in-out cursor-pointer";
 
   const navSections = [
     { label: "Main", id: "main" },
@@ -21,7 +21,7 @@ export const Header = () => {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative section-container'>
       <header
         className={`flex justify-between items-center py-[12px] px-[16px] rounded-[32px] relative z-20 transition-all duration-300 ease-in-out ${
           isMenuOpen ? "bg-zinc-100" : "shadow-md bg-white"

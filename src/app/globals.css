@@ -21,7 +21,7 @@
     display: none;
   }
   .img-responsive {
-    width: 80%; /* например, меняем размер */
+    width: 80%;
     height: auto;
   }
 }
