@@ -12,7 +12,7 @@ export const MainSection = () => {
     <section className='relative pt-20 pb-28' id='main'>
       <div className='relative section-container'>
         <div className='space-y-8 '>
-          <div className='max-w-4xl'>
+          <div className='max-w-1/2'>
             <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase text-black'>
               Resumes Built
               <br />
@@ -33,7 +33,7 @@ export const MainSection = () => {
                 "linear-gradient(29.26deg, rgb(255, 212, 160) 2.358%, rgb(255, 234, 208) 31.415%, rgb(255, 255, 255) 113.154%)",
             }}
           >
-            <p className='max-w-[580px] w-full text-[#020618] font-light text-[28px] leading-[56px] tracking-normal mb-10'>
+            <p className='max-w-1/2 w-full text-[#020618] font-light text-[28px] leading-[56px] tracking-normal mb-10'>
               Create standout resumes in minutes with AI-driven insights. Land
               your dream job with stunning templates.
             </p>
@@ -84,17 +84,15 @@ export const MainSection = () => {
           </div>
         </div>
 
-        <div className='absolute top-0 right-0 max-w-full overflow-hidden hidden min-[1301px]:block'>
-          <div className='relative w-full'>
-            <Image
-              src='/img-laptop.png'
-              alt='Resume builder interface on laptop'
-              width={640}
-              height={650}
-              className='w-full h-auto object-contain'
-              priority
-            />
-          </div>
+        <div className='absolute bottom-0 left-1/2 w-[50vw]'>
+          <Image
+            src='/img-laptop.png'
+            alt='Resume builder interface on laptop'
+            width={640}
+            height={650}
+            className='object-contain h-full'
+            priority
+          />
         </div>
       </div>
     </section>
