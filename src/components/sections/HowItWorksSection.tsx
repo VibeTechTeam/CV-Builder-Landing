@@ -89,13 +89,11 @@ export const HowItWorksSection = () => {
         className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first  md:h-[900px]  lg:h-[600px] xl:h-[600px] xl1440:h-[880px]"
         >
             <div className="flex items-center justify-center md:flex-col lg:flex-row xl:flex-row">
-                <div className="w-image-second h-image-second  relative bottom-36 left-48 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-20 lg:left-9 lg:w-[1000px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" >
-                    {/* <Image className="w-full h-auto object-contain" src={ThirdSectionImage} alt="Third section image" /> */}
+                {/* <div className="w-image-second h-image-second  relative bottom-36 left-48 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[800px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" > */}
+                <div className="w-image-second h-image-second  relative bottom-36 left-48 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[700px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" >
                     <Image className="w-full h-full object-contain" src={ThirdSectionImage} alt="Third section image" />
                 </div>
-                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28  md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:w-[555px]"> */}
                 <div className="flex flex-col gap-6 relative bottom-48 right-28  md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38">
-                    {/* <p className="font-noto-sans font-semibold text-5xl lg:text-4xl">Unlock Your Advantage<br/>with Foliofy</p> */}
                     <p className="font-noto-sans font-semibold text-5xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
                     <p className="font-noto-sans text-3xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
                 </div>
