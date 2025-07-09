@@ -82,12 +82,6 @@ export const HowItWorksSection = () => {
                 </div>
             </div>
         </section>
-        {/* <section
-        style={{
-            backgroundImage: "url('/third-section-bg.png')",
-        }}
-        className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first  md:h-[900px]  lg:h-[600px] xl:h-[600px] xl1440:h-[880px]"
-        > */}
         <section
         style={{
             backgroundImage: "url('/third-section-bg.png')",
@@ -97,11 +91,15 @@ export const HowItWorksSection = () => {
             {/* <div className="flex items-center justify-center sm:flex-col md:flex-col lg:flex-row xl:flex-row"> */}
             <div className="flex flex-col items-center justify-center sm:flex-col md:flex-col lg:flex-row xl:flex-row">
                 {/* <div className="w-[400px] relative bottom-36 left-48 smx:bottom-12 smx:left-10 sm:w-[600px] sm:bottom-18 sm:left-12 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[700px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" > */}
-                <div className="w-[500px] relative bottom-36 left-48 smx:bottom-12 smx:left-10 sm:w-[700px] sm:bottom-18 sm:left-12 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[700px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" >
+                {/* <div className="w-[500px] relative bottom-36 left-48 smx:bottom-12 smx:left-10 sm:w-[700px] sm:bottom-18 sm:left-12 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[700px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" > */}
+                <div className="w-[500px] relative bottom-36 left-48 xs:bottom-16 xs:left-11 smx:bottom-12 smx:left-10 sm:w-[700px] sm:bottom-18 sm:left-12 md:w-[800px] md:bottom-28 md:left-20 lg:bottom-28 lg:left-9 lg:w-[700px] xl:bottom-24 xl:left-4 xl:w-[700px] xl1440:w-[938px] xl1440:h-[1144px] xl1440:bottom-32 xl1440:left-0 xl1536:w-[1271px]" >
                     <Image className="w-full h-full object-contain" src={ThirdSectionImage} alt="Third section image" />
                 </div>
                 {/* <div className="flex flex-col gap-6 relative bottom-48 right-28  smx:bottom-20 sm:bottom-32 sm:right-0 md:bottom-52 md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38"> */}
-                <div className="flex flex-col gap-6 relative bottom-48 right-28  smx:bottom-20 smx:right-0 sm:bottom-32 sm:right-0 md:bottom-52 md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38">
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28  smx:bottom-20 smx:right-0 sm:bottom-32 sm:right-0 md:bottom-52 md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38"> */}
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28  xs:bottom-28 xs:right-0 smx:bottom-20 smx:right-0 sm:bottom-32 sm:right-0 md:bottom-52 md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38"> */}
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28  xs:bottom-28 xs:right-0 smx:bottom-20 smx:right-0 sm:bottom-32 sm:right-0 md:bottom-52 md:right-0 lg:bottom-14 lg:right-12 xl:bottom-24 xl:right-24 xl1440:bottom-32 xl1440:w-[555px] xl1536:bottom-38"> */}
+                <div className="flex flex-col gap-6 relative bottom-48 right-28  xs:bottom-28 xs:right-0 xs:left-5 smx:bottom-20 smx:right-0 smx:left-0 sm:bottom-32 sm:right-0 sm:left-0 md:bottom-52 md:right-0 md:left-0 lg:bottom-14 lg:right-12 lg:left-0 xl:bottom-24 xl:right-24 xl:left-0 xl1440:bottom-32 xl1440:w-[555px] xl1440:left-0 xl1536:bottom-38 xl1536:left-0">
                     {/* <p className="font-noto-sans font-semibold text-5xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
                     <p className="font-noto-sans font-semibold text-5xl smx:text-3xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
                     <p className="font-noto-sans text-3xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
