@@ -94,14 +94,13 @@ export const HowItWorksSection = () => {
                     <Image className="w-full h-full object-contain" src={ThirdSectionImage} alt="Third section image" />
                 </div>
                 <div className="flex flex-col gap-6 relative bottom-48 right-28  xs:bottom-28 xs:right-0 xs:left-5 smx:bottom-20 smx:right-0 smx:left-auto sm:bottom-32 sm:right-0 sm:left-auto md:bottom-52 md:right-0 md:left-auto lg:bottom-14 lg:right-12 lg:left-auto xl:bottom-24 xl:right-24 xl:left-auto xl1440:bottom-32 xl1440:w-[555px] xl1440:left-auto xl1536:bottom-38 xl1536:left-auto">
-                    {/* <p className="font-noto-sans font-semibold text-5xl smx:text-3xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
-                    {/* <p className="font-noto-sans font-semibold text-5xl xs:text-3xl smx:text-3xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
                     {/* <p className="font-noto-sans font-semibold text-5xl  lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
-                    <p className="font-noto-sans font-semibold text-5xl  smx:text-3xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
+                    {/* <p className="font-noto-sans font-semibold text-5xl  smx:text-3xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
+                    <p className="font-noto-sans font-semibold text-5xl  smx:text-4xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
                     {/*  */}
-                    {/* <p className="font-noto-sans text-3xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p> */}
-                    {/* <p className="font-noto-sans text-3xl smx:text-lg sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p> */}
-                    <p className="font-noto-sans text-3xl xs:text-lg smx:text-2xl sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
+                    {/* <p className="font-noto-sans text-3xl xs:text-lg smx:text-2xl sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p> */}
+                    {/* <p className="font-noto-sans text-3xl xs:text-xl smx:text-2xl sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p> */}
+                    <p className="font-noto-sans text-3xl xs:text-xl smx:text-2xl sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p>
                 </div>
             </div>
         </section>
