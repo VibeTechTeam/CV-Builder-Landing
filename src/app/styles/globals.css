@@ -16,8 +16,10 @@
   --width-image-second: 1000px;
   --width-image-third: 1271.11px;
   /*Custom breakpoints*/
-  --breakpoint-xs: 23.4375rem; /*375px*/
-  --breakpoint-smx: 26.5625rem; /*425px*/
+  --breakpoint-ultraXS: 18rem; /* 288px */
+  --breakpoint-mobileXS: 20rem; /* 320px */
+  --breakpoint-xs: 23.4375rem; /* 375px */
+  --breakpoint-smx: 26.5625rem; /* 425px */
   --breakpoint-xl1440: 90rem;
   --breakpoint-xl1536: 96rem;
 }
