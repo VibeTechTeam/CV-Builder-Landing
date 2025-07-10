@@ -82,11 +82,17 @@ export const HowItWorksSection = () => {
                 </div>
             </div>
         </section>
-        <section
+        {/* <section
         style={{
             backgroundImage: "url('/third-section-bg.png')",
         }}
         className="bg-white-first rounded-t-4xl overflow-hidden  h-section-first  smx:h-[700px]  sm:h-[880px]  md:h-[900px]  lg:h-[600px] xl:h-[600px] xl1440:h-[880px]"
+        > */}
+        <section
+        style={{
+            backgroundImage: "url('/third-section-bg.png')",
+        }}
+        className="bg-white-first rounded-t-4xl overflow-hidden h-section-first ultraXS:h-[550px] smx:h-[700px] sm:h-[880px] md:h-[900px] lg:h-[600px] xl:h-[600px] xl1440:h-[880px]"
         >
             {/* <div className="flex items-center justify-center sm:flex-col md:flex-col lg:flex-row xl:flex-row"> */}
             <div className="flex flex-col items-center justify-center sm:flex-col md:flex-col lg:flex-row xl:flex-row">
@@ -95,8 +101,10 @@ export const HowItWorksSection = () => {
                     <Image className="w-full h-full object-contain" src={ThirdSectionImage} alt="Third section image" />
                 </div>
                 {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 ultraXS:right-0 ultraXS:left-0 mobileXS:bottom-16 mobileXS:right-0 mobileXS:left-auto xs:bottom-26 xs:right-0 xs:left-3 smx:bottom-20 smx:right-0 smx:left-auto sm:bottom-32 sm:right-0 sm:left-auto md:bottom-52 md:right-0 md:left-auto lg:bottom-14 lg:right-12 lg:left-auto xl:bottom-24 xl:right-24 xl:left-auto xl1440:bottom-32 xl1440:w-[555px] xl1440:left-auto xl1536:bottom-38 xl1536:left-auto"> */}
-                <div className="flex flex-col gap-6 relative bottom-48 right-28 ultraXS:right-0 ultraXS:left-0 mobileXS:bottom-16 mobileXS:right-0 mobileXS:left-auto xs:bottom-26 xs:right-0 xs:left-3 smx:bottom-20 smx:right-0 smx:left-auto sm:bottom-32 sm:right-0 sm:left-auto md:bottom-52 md:right-0 md:left-auto lg:bottom-14 lg:right-12 lg:left-auto xl:bottom-24 xl:right-24 xl:left-auto xl1440:bottom-32 xl1440:w-[555px] xl1440:left-auto xl1536:bottom-38 xl1536:left-auto">
+                {/* <div className="flex flex-col gap-6 relative bottom-48 right-28 ultraXS:right-0 ultraXS:left-0 mobileXS:bottom-16 mobileXS:right-0 mobileXS:left-auto xs:bottom-26 xs:right-0 xs:left-3 smx:bottom-20 smx:right-0 smx:left-auto sm:bottom-32 sm:right-0 sm:left-auto md:bottom-52 md:right-0 md:left-auto lg:bottom-14 lg:right-12 lg:left-auto xl:bottom-24 xl:right-24 xl:left-auto xl1440:bottom-32 xl1440:w-[555px] xl1440:left-auto xl1536:bottom-38 xl1536:left-auto"> */}
+                <div className="flex flex-col gap-6 relative bottom-48 right-28 ultraXS:right-0 ultraXS:left-0 mobileXS:bottom-16 mobileXS:right-0 mobileXS:left-auto xs:bottom-26 xs:right-0 xs:left-3 smx:bottom-20 smx:right-0 smx:left-auto sm:bottom-32 sm:right-0 sm:left-auto md:bottom-52 md:right-0 md:left-auto lg:bottom-20 lg:right-12 lg:left-auto xl:bottom-20 xl:right-24 xl:left-auto xl1440:bottom-32 xl1440:w-[555px] xl1440:left-auto xl1536:bottom-38 xl1536:left-auto" >
                     {/* <p className="font-noto-sans font-semibold text-5xl ultraXS:text-2xl mobileXS:text-3xl smx:text-4xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
+                    {/* <p className="font-noto-sans font-semibold text-5xl ultraXS:text-xl mobileXS:text-2xl smx:text-4xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p> */}
                     <p className="font-noto-sans font-semibold text-5xl ultraXS:text-xl mobileXS:text-2xl smx:text-4xl lg:text-4xl xl:text-5xl">Unlock Your Advantage<br/>with Foliofy</p>
                     {/*  */}
                     {/* <p className="font-noto-sans text-3xl xs:text-xl mobileXS:text-xl smx:text-2xl sm:text-2xl lg:text-2xl xl:text-3xl"><span className="text-accent-500">Create</span>, edit, and download<br/>your <span className="text-accent-500">resume</span> right<br/>from your <span className="text-accent-500">phone</span></p> */}
