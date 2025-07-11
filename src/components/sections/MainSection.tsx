@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 export const MainSection = () => {
@@ -9,7 +10,7 @@ export const MainSection = () => {
   ];
 
   return (
-    <section className='relative pt-20 pb-28' id='main'>
+    <section className='relative pt-20 pb-28 z-10' id='main'>
       <div className='relative section-container'>
         <div className='space-y-8 '>
           <div className='max-w-1/2'>
