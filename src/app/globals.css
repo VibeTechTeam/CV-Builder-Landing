@@ -2,7 +2,17 @@
 
 @theme {
   /* Custom colors */
+  --color-accent-50: #fef7ed;
+  --color-accent-100: #fdedd3;
+  --color-accent-200: #fad7a6;
+  --color-accent-300: #f6bc6e;
+  --color-accent-400: #f19834;
   --color-accent-500: #e17100;
+  --color-accent-600: #c25e00;
+  --color-accent-700: #a14a00;
+  --color-accent-800: #833b00;
+  --color-accent-900: #6b2f00;
+  --color-accent-950: #3a1800;
 }
 
 @layer base {
@@ -26,4 +36,34 @@
   }
 }
 
+}
+
+@layer components {
+  .btn {
+    @apply font-medium text-lg px-8 py-4 rounded-full transition-all duration-300 flex items-center gap-3 md:mx-0 mx-auto cursor-pointer;
+
+    &:hover {
+      @apply -translate-y-1;
+    }
+
+    &:active {
+      @apply -translate-y-0.5;
+    }
+
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+
+    & svg {
+      @apply w-5 h-5 transition-transform duration-200;
+    }
+
+    &:hover svg {
+      @apply translate-x-1;
+    }
+
+    &.btn-secondary {
+      @apply bg-accent-500 text-white;
+    }
+  }
 }
