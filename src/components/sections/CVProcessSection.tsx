@@ -1,33 +1,37 @@
 export const CVProcessSection = () => {
   const process = [
     {
-      icon: "/icon-ai.svg",
-      title: "AI content Suggestions",
+      icon: '/icon-ai.svg',
+      title: 'AI content Suggestions',
       description:
-        "Get smart recommendations for skills, summaries, and bullet points tailored to your industry.",
+        'Get smart recommendations for skills, summaries, and bullet points tailored to your industry.',
     },
     {
-      icon: "/icon-palette.svg",
-      title: "Professional templates",
+      icon: '/icon-palette.svg',
+      title: 'Professional templates',
       description:
-        "Access a wide range of modern, ATS-optimised templates designed by experts.",
+        'Access a wide range of modern, ATS-optimised templates designed by experts.',
     },
     {
-      icon: "/icon-pdf.svg",
-      title: "One-click PDF export",
+      icon: '/icon-pdf.svg',
+      title: 'One-click PDF export',
       description:
-        "Download your resume in a universally accepted PDF format, ready for applications.",
+        'Download your resume in a universally accepted PDF format, ready for applications.',
     },
     {
-      icon: "/icon-phone.svg",
-      title: "Multi-device access",
+      icon: '/icon-phone.svg',
+      title: 'Multi-device access',
       description:
-        "Build and edit your resume anytime, anywhere, or any device.",
+        'Build and edit your resume anytime, anywhere, or any device.',
     },
   ];
 
   return (
-    <section id='features'>
+    <section
+      data-scroll-section
+      id='features'
+      className='bg-white rounded-t-4xl'
+    >
       <div className='section-container py-[80px] px-4'>
         {/* Desktop */}
         <div className='hidden lg:flex items-center gap-10'>
@@ -79,7 +83,7 @@ export const CVProcessSection = () => {
         <div className='lg:hidden flex flex-col'>
           <div className='flex flex-col gap-6 text-center mb-8'>
             <h2 className='text-[#020618] font-[Noto Sans] text-[32px] sm:text-[36px] font-semibold leading-[36px] sm:leading-[40px]'>
-              Foliofy <span className='text-[#e17100]'>Gives</span> You the{" "}
+              Foliofy <span className='text-[#e17100]'>Gives</span> You the{' '}
               <span className='text-[#e17100]'>Edge</span>
             </h2>
             <p className='text-[#62748e] font-[Ubuntu] text-[18px] sm:text-[20px] font-normal leading-[26px] sm:leading-[28px] px-4'>
