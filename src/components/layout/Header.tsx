@@ -1,19 +1,20 @@
-"use client";
-import { useState } from "react";
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import { Logo, PulseButton } from '@/components';
+import Link from 'next/link';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItemStyles =
-    "text-[#62748E] font-inter font-bold text-lg leading-6 tracking-normal whitespace-nowrap hover:bg-amber-50 hover:text-black rounded-[32px] px-6 py-3 transition-colors duration-300 ease-in-out cursor-pointer";
+    'text-[#62748E] font-inter font-bold text-lg leading-6 tracking-normal whitespace-nowrap hover:bg-amber-50 hover:text-black rounded-[32px] px-6 py-3 transition-colors duration-300 ease-in-out cursor-pointer';
 
   const navSections = [
-    { label: "Main", id: "main" },
-    { label: "How it works", id: "how-it-works" },
-    { label: "Features", id: "features" },
-    { label: "Templates", id: "templates" },
-    { label: "FAQ", id: "faq" },
+    { label: 'Main', id: 'main' },
+    { label: 'How it works', id: 'how-it-works' },
+    { label: 'Features', id: 'features' },
+    { label: 'Templates', id: 'templates' },
+    { label: 'FAQ', id: 'faq' },
   ];
 
   const toggleMenu = () => {
@@ -21,27 +22,26 @@ export const Header = () => {
   };
 
   return (
-    <div className='relative section-container'>
+    <div className='relative'>
       <header
-        className={`flex justify-between items-center py-[12px] px-[16px] rounded-[32px] relative z-20 transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "bg-zinc-100" : "shadow-md bg-white"
+        className={`fixed top-4 left-4 right-4 flex justify-between items-center py-[12px] px-[16px] rounded-[32px] z-50 transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'bg-zinc-100' : 'shadow-md bg-white'
         }`}
         style={
           isMenuOpen
             ? {
                 boxShadow:
-                  "0px 2px 4px -1px #0000000F, 0px 4px 6px -1px #0000001A",
+                  '0px 2px 4px -1px #0000000F, 0px 4px 6px -1px #0000001A',
               }
             : {}
         }
       >
-        <Image
-          src='/icon-logo.svg'
-          alt='Logo'
-          style={{ cursor: "pointer" }}
-          width={96}
-          height={54}
-        />
+        <Link
+          href='/'
+          className='cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out'
+        >
+          <Logo />
+        </Link>
 
         {/* Navigation */}
         <nav className='flex-1 mx-8 hidden min-[901px]:flex'>
@@ -54,9 +54,7 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <button className='rounded-[32px] bg-[#020618] text-white px-8 py-3 font-inter font-bold text-lg leading-6 tracking-normal hover:bg-[#0f172a] hover:text-gray-100 transition-colors duration-300 ease-in-out hidden min-[901px]:block'>
-          Log in
-        </button>
+        <PulseButton />
 
         {/* Burger Menu Button */}
         <button
@@ -66,17 +64,17 @@ export const Header = () => {
           <div className='w-6 h-6 flex flex-col justify-center items-center relative'>
             <span
               className={`absolute w-full h-0.5 bg-[#62748E] rounded transition-all duration-300 ${
-                isMenuOpen ? "rotate-45" : "top-1"
+                isMenuOpen ? 'rotate-45' : 'top-1'
               }`}
             ></span>
             <span
               className={`absolute w-full h-0.5 bg-[#62748E] rounded transition-all duration-300 ${
-                isMenuOpen ? "opacity-0" : ""
+                isMenuOpen ? 'opacity-0' : ''
               }`}
             ></span>
             <span
               className={`absolute w-full h-0.5 bg-[#62748E] rounded transition-all duration-300 ${
-                isMenuOpen ? "-rotate-45" : "bottom-1"
+                isMenuOpen ? '-rotate-45' : 'bottom-1'
               }`}
             ></span>
           </div>
@@ -94,9 +92,9 @@ export const Header = () => {
       {/* Mobile Dropdown nav */}
       <nav
         className={`flex flex-col justify-between fixed top-[80px] left-0 right-0 bg-white mx-4 overflow-hidden transition-all duration-300 ease-in-out z-20 min-[901px]:hidden ${
-          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
-        style={{ transitionProperty: "max-height, opacity" }}
+        style={{ transitionProperty: 'max-height, opacity' }}
       >
         <ul className='py-4'>
           {navSections.map(({ label, id }) => (

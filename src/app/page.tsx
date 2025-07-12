@@ -41,11 +41,40 @@ export default function Home() {
       });
     };
 
-    const timer = setTimeout(initScrollTrigger, 100);
+    const initHeaderAnimation = () => {
+      const header = document.querySelector('header') as HTMLElement;
+      if (!header) return;
+
+      gsap.set(header, { yPercent: 0 });
+
+      const showAnim = gsap.to(header, {
+        yPercent: -150,
+        paused: true,
+        duration: 0.5,
+        ease: 'ease',
+      });
+
+      ScrollTrigger.create({
+        start: '200px top',
+        end: 99999,
+        onUpdate: self => {
+          if (self.direction === -1) {
+            showAnim.reverse();
+          } else {
+            showAnim.play();
+          }
+        },
+      });
+    };
+
+    const timer = setTimeout(() => {
+      initScrollTrigger();
+      initHeaderAnimation();
+    }, 100);
 
     return () => {
       clearTimeout(timer);
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
       ScrollTrigger.refresh();
     };
   }, []);
