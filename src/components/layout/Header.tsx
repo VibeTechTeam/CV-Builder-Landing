@@ -54,7 +54,7 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <PulseButton />
+        <PulseButton className='hidden lg:block' />
 
         {/* Burger Menu Button */}
         <button
