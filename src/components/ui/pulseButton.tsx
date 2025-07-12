@@ -1,15 +1,21 @@
 'use client';
 import React, { useState } from 'react';
 
-export const PulseButton = ({ text = 'Get Started' }: { text?: string }) => {
+export const PulseButton = ({
+  text = 'Get Started',
+  className,
+}: {
+  text?: string;
+  className?: string;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
 
   return (
     <button
-      className='group relative bg-black flex justify-center items-center gap-3 rounded-full w-[9.3rem] h-12 
+      className={`group relative bg-black flex justify-center items-center gap-3 rounded-full w-[9.3rem] h-12 
       transition-all duration-500 ease-out
-      hover:scale-105 active:scale-95 overflow-hidden'
+      hover:scale-105 active:scale-95 overflow-hidden ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
