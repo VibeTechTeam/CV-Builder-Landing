@@ -1,16 +1,20 @@
-"use client";
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 
 export const MainSection = () => {
   const avatarImages = [
-    "/img-person1.png",
-    "/img-person2.png",
-    "/img-person3.png",
-    "/img-person4.png",
+    '/img-person1.png',
+    '/img-person2.png',
+    '/img-person3.png',
+    '/img-person4.png',
   ];
 
   return (
-    <section className='relative pt-20 pb-28 z-10' id='main'>
+    <section
+      data-scroll-section
+      className='relative pt-20 pb-28 z-10'
+      id='main'
+    >
       <div className='relative section-container'>
         <div className='space-y-8 '>
           <div className='max-w-1/2'>
@@ -31,7 +35,7 @@ export const MainSection = () => {
             className='w-full rounded-[32px] shadow-lg pt-8 pr-10 pb-8 pl-10'
             style={{
               background:
-                "linear-gradient(29.26deg, rgb(255, 212, 160) 2.358%, rgb(255, 234, 208) 31.415%, rgb(255, 255, 255) 113.154%)",
+                'linear-gradient(29.26deg, rgb(255, 212, 160) 2.358%, rgb(255, 234, 208) 31.415%, rgb(255, 255, 255) 113.154%)',
             }}
           >
             <p className='max-w-1/2 w-full text-[#020618] font-light text-[28px] leading-[56px] tracking-normal mb-10'>
@@ -62,8 +66,8 @@ export const MainSection = () => {
             <button
               className='flex items-center justify-center border-4 rounded-[32px] bg-white py-4 px-6 font-medium text-xl leading-none tracking-normal align-middle gap-2 transition hover:bg-orange-50'
               style={{
-                borderColor: "rgb(225, 113, 0)",
-                fontFamily: "Montserrat, sans-serif",
+                borderColor: 'rgb(225, 113, 0)',
+                fontFamily: 'Montserrat, sans-serif',
               }}
               aria-label='Create your free resume'
             >

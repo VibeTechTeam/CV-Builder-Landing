@@ -1,59 +1,28 @@
-"use client";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 export const HowItWorksSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
   const steps = [
     {
-      number: "01",
-      title: "Choose a template",
+      number: '01',
+      title: 'Choose a template',
       description:
-        "Select from our library of professionally designed, ATS-friendly resume templates.",
+        'Select from our library of professionally designed, ATS-friendly resume templates.',
     },
     {
-      number: "02",
-      title: "Add your details with AI",
+      number: '02',
+      title: 'Add your details with AI',
       description:
-        "Fill in your information, and let our AI provide content suggestions and optimize phrasing.",
+        'Fill in your information, and let our AI provide content suggestions and optimize phrasing.',
     },
     {
-      number: "03",
-      title: "Download & apply",
+      number: '03',
+      title: 'Download & apply',
       description:
-        "Once your resume is ready, download it as a job-ready PDF and begin applying with confidence.",
+        'Once your resume is ready, download it as a job-ready PDF and begin applying with confidence.',
     },
   ];
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (section) {
-      gsap.fromTo(
-        section,
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 85%",
-            end: "top 60%",
-            scrub: true,
-          },
-        }
-      );
-    }
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
+      data-scroll-section
       id='how-it-works'
       style={{
         backgroundImage: "url('/how-it-works-bg.jpg')",
