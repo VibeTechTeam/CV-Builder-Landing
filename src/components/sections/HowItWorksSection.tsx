@@ -1,3 +1,7 @@
+
+import Image from "next/image";
+import ArrowTop from "../../../public/ArrowTop.svg"
+
 export const HowItWorksSection = () => {
   const steps = [
     {
@@ -82,17 +86,26 @@ export const HowItWorksSection = () => {
       <section
       className="relative bg-white rounded-t-4xl"
       >
-        <div className="flex flex-col justify-center gap-10">
-          <div>
-            <h5 className="font-noto-sans font-semibold p-2 text-center leading-12">Frequently asked questions</h5>
+        {/* <div className="flex flex-col justify-center gap-10"> */}
+        <div className="flex flex-col justify-center items-center gap-10">
+          <div className="flex justify-center">
+            <h5 className="font-noto-sans font-semibold p-2 leading-12">Frequently asked questions</h5>
+            {/* <h5 className="font-semibold p-2 leading-12">Frequently asked questions</h5> */}
           </div>
-          <div className="flex flex-col justify-center">
-            <div>
-              <div>
-                <p>Is Foliofy free to use?</p>
-                <div></div>
+          {/* <div className="flex flex-col justify-center"> */}
+          {/* <div className="flex flex-col justify-center w-[361px]"> */}
+          <div className="flex flex-col justify-center pr-3.5 pl-3.5">
+            {/* <div className="w-[361px] border-b-1"> */}
+            <div className="border-b-1">
+              {/* <div className="flex items-center"> */}
+              <div className="flex items-center gap-[139px]">
+                <p className="font-bold text-xl leading-8 pt-4 pb-4">Is Foliofy free to use?</p>
+                {/* <div className="ml-32 pt-6 pb-6"> */}
+                <div className="pt-6 pb-6">
+                  <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowTop} alt="Arrow Top" />
+                </div>
               </div>
-              <p className="text-lg leading-6 text-zinc-700 w-[361px]">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
+              <p className="leading-6 text-lg text-zinc-700">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
             </div>
             <div></div>
             <div></div>
