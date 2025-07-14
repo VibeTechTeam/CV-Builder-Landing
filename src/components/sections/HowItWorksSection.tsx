@@ -88,7 +88,6 @@ export const HowItWorksSection = () => {
       className="relative bg-white rounded-t-4xl"
       >
         <div className="flex flex-col justify-center items-center gap-10">
-          {/* <div className="flex justify-center mt-6"> */}
           <div className="flex justify-center mt-6 xl1440:mt-20">
             <h2 className="font-noto-sans font-semibold p-2 leading-12 text-2xl xl1440:text-4xl">Frequently asked questions</h2>
           </div>
@@ -103,26 +102,18 @@ export const HowItWorksSection = () => {
               <p className="leading-6 text-lg text-zinc-700 pb-4 xl1440:leading-8 xl1440:text-xl">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
             </div>
             <div className="flex items-center justify-between border-b-1 border-white-first">
-              {/* <p className="text-xl leading-8 underline pt-4 pb-4">Are the resumes ATS fiendly?</p> */}
-              {/* <p className="text-xl leading-8 underline pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Are the resumes ATS fiendly?</p> */}
               <p className="text-xl leading-8 underline pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Are the resumes ATS fiendly?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
               </div>
             </div>
             <div className="flex items-center justify-between border-b-1 border-white-first">
-              {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I import my existing resume?</p> */}
-              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I import my existing resume?</p> */}
-              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Can I import my existing resume?</p> */}
               <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Can I import my existing resume?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
               </div>
             </div>
             <div className="flex items-center justify-between border-b-1 border-white-first">
-              {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p> */}
-              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p> */}
-              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Can I edit my resume after downloading it?</p> */}
               <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Can I edit my resume after downloading it?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
