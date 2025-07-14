@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import ArrowTop from "../../../public/ArrowTop.svg"
+import ArrowBottom from "../../../public/ArrowBottom.svg"
 
 export const HowItWorksSection = () => {
   const steps = [
@@ -90,19 +91,37 @@ export const HowItWorksSection = () => {
           <div className="flex justify-center mt-6">
             <h5 className="font-noto-sans font-semibold p-2 leading-12">Frequently asked questions</h5>
           </div>
-          <div className="flex flex-col justify-center pr-[16px] pl-[16px]">
-            <div className="border-b-1">
+          <div className="flex flex-col justify-center pr-[16px] pl-[16px] mb-6">
+            <div className="border-b-1 border-white-first">
               <div className="flex items-center gap-[99px]">
                 <p className="font-bold text-xl leading-8 pt-4 pb-4">Is Foliofy free to use?</p>
                 <div className="pt-6 pb-6">
                   <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowTop} alt="Arrow Top" />
                 </div>
               </div>
-              <p className="leading-6 text-lg text-zinc-700">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
+              <p className="leading-6 text-lg text-zinc-700 pb-4">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            {/* <div className="flex items-center gap-[82px]"> */}
+            <div className="flex items-center gap-[50px] border-b-1 border-white-first">
+              <p className="text-xl leading-8 underline pt-4 pb-4">Are the resumes ATS fiendly?</p>
+              <div className="pt-6 pb-6">
+                <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
+              </div>
+            </div>
+            <div className="flex items-center border-b-1 border-white-first">
+              {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I import my existing resume?</p> */}
+              <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I import my existing resume?</p>
+              <div className="pt-6 pb-6">
+                <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
+              </div>
+            </div>
+            <div className="flex items-center border-b-1 border-white-first">
+              {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p> */}
+              <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p>
+              <div className="pt-6 pb-6">
+                <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

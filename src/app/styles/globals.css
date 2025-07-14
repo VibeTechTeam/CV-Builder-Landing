@@ -4,6 +4,8 @@
 @theme {
   /* Custom colors */
   --color-accent-500: #e17100;
+  --color-white-first: #e2e8f0;
+  /* --color-border-white: #e2e8f0; */
   /*Fonts family*/
   --font-noto-sans: "Noto Sans", sans-serif;
 }
