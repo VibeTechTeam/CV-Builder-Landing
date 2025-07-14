@@ -91,7 +91,7 @@ export const HowItWorksSection = () => {
           <div className="flex justify-center mt-6 xl1440:mt-20">
             <h2 className="font-noto-sans font-semibold p-2 leading-12 text-2xl xl1440:text-4xl">Frequently asked questions</h2>
           </div>
-          <div className="flex flex-col justify-center pr-[16px] pl-[16px] mb-6">
+          <div className="flex flex-col justify-center pr-[16px] pl-[16px] mb-6 w-[1184px]">
             <div className="border-b-1 border-white-first">
               <div className="flex items-center justify-between">
                 <p className="font-bold text-xl leading-8 pt-4 pb-4 xl1440:text-2xl">Is Foliofy free to use?</p>
