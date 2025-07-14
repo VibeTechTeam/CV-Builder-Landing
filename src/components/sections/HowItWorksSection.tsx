@@ -86,21 +86,14 @@ export const HowItWorksSection = () => {
       <section
       className="relative bg-white rounded-t-4xl"
       >
-        {/* <div className="flex flex-col justify-center gap-10"> */}
         <div className="flex flex-col justify-center items-center gap-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-6">
             <h5 className="font-noto-sans font-semibold p-2 leading-12">Frequently asked questions</h5>
-            {/* <h5 className="font-semibold p-2 leading-12">Frequently asked questions</h5> */}
           </div>
-          {/* <div className="flex flex-col justify-center"> */}
-          {/* <div className="flex flex-col justify-center w-[361px]"> */}
-          <div className="flex flex-col justify-center pr-3.5 pl-3.5">
-            {/* <div className="w-[361px] border-b-1"> */}
+          <div className="flex flex-col justify-center pr-[16px] pl-[16px]">
             <div className="border-b-1">
-              {/* <div className="flex items-center"> */}
-              <div className="flex items-center gap-[139px]">
+              <div className="flex items-center gap-[99px]">
                 <p className="font-bold text-xl leading-8 pt-4 pb-4">Is Foliofy free to use?</p>
-                {/* <div className="ml-32 pt-6 pb-6"> */}
                 <div className="pt-6 pb-6">
                   <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowTop} alt="Arrow Top" />
                 </div>
