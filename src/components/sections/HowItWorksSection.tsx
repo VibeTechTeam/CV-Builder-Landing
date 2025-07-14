@@ -94,8 +94,6 @@ export const HowItWorksSection = () => {
           </div>
           <div className="flex flex-col justify-center pr-[16px] pl-[16px] mb-6">
             <div className="border-b-1 border-white-first">
-              {/* <div className="flex items-center gap-[99px]"> */}
-              {/* <div className="flex items-center gap-[99px] xl1440:gap-0 xl1440:justify-between"> */}
               <div className="flex items-center justify-between">
                 <p className="font-bold text-xl leading-8 pt-4 pb-4 xl1440:text-2xl">Is Foliofy free to use?</p>
                 <div className="pt-6 pb-6">
@@ -104,29 +102,28 @@ export const HowItWorksSection = () => {
               </div>
               <p className="leading-6 text-lg text-zinc-700 pb-4 xl1440:leading-8 xl1440:text-xl">Foliofy offers a free plan with basic features and limited number of resume downloads. Our premium plans unlock advanced AI features, more templates, and unlimited downloads.</p>
             </div>
-            {/* <div className="flex items-center gap-[82px]"> */}
-            {/* <div className="flex items-center gap-[50px] border-b-1 border-white-first"> */}
-            {/* <div className="flex items-center gap-[50px] border-b-1 border-white-first xl1440:gap-0 xl1440:justify-between"> */}
             <div className="flex items-center justify-between border-b-1 border-white-first">
-              <p className="text-xl leading-8 underline pt-4 pb-4">Are the resumes ATS fiendly?</p>
+              {/* <p className="text-xl leading-8 underline pt-4 pb-4">Are the resumes ATS fiendly?</p> */}
+              {/* <p className="text-xl leading-8 underline pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Are the resumes ATS fiendly?</p> */}
+              <p className="text-xl leading-8 underline pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Are the resumes ATS fiendly?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
               </div>
             </div>
-            {/* <div className="flex items-center border-b-1 border-white-first"> */}
-            {/* <div className="flex items-center border-b-1 border-white-first xl1440:justify-between"> */}
             <div className="flex items-center justify-between border-b-1 border-white-first">
               {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I import my existing resume?</p> */}
-              <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I import my existing resume?</p>
+              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I import my existing resume?</p> */}
+              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Can I import my existing resume?</p> */}
+              <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Can I import my existing resume?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
               </div>
             </div>
-            {/* <div className="flex items-center border-b-1 border-white-first"> */}
-            {/* <div className="flex items-center border-b-1 border-white-first xl1440:justify-between"> */}
             <div className="flex items-center justify-between border-b-1 border-white-first">
               {/* <p className="font-bold text-xl leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p> */}
-              <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p>
+              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4">Can I edit my resume after downloading it?</p> */}
+              {/* <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:pt-11 xl1440:pb-11">Can I edit my resume after downloading it?</p> */}
+              <p className="font-bold text-lg leading-8 pt-4 pb-4 xl1440:text-2xl xl1440:pt-11 xl1440:pb-11">Can I edit my resume after downloading it?</p>
               <div className="pt-6 pb-6">
                 <Image className="pt-1.5 pb-1.5 pl-1 pr-1 w-full" src={ArrowBottom} alt="Arrow Down" />
               </div>
