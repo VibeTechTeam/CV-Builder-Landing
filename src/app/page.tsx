@@ -1,15 +1,17 @@
 import {
+  MainSection,
   HowItWorksSection,
   StartBuildSection,
   TemplateSection,
-} from '@/components';
+  FeatureSection,
+} from "@/components";
 
 export default function Home() {
   return (
     <div>
       <MainSection />
       <HowItWorksSection />
-      <div className="h-[50vh] w-full" />
+      <FeatureSection />
       <TemplateSection />
       <StartBuildSection />
     </div>
