@@ -36,7 +36,7 @@ export const CVProcessSection = () => {
       ref={rootRef}
       data-scroll-section
       id='features'
-      className='min-h-[calc(100vh+100px)] flex items-center  bg-white rounded-t-4xl'
+      className='relative min-h-[calc(100vh+100px)] flex items-center  bg-white rounded-t-4xl'
     >
       <div className='section-container py-[80px] px-4'>
         {/* Desktop */}

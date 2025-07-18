@@ -22,7 +22,7 @@ export default function Home() {
       if (sections.length === 0) return;
 
       sections.forEach((section, idx) => {
-        gsap.set(section, { zIndex: idx + 1 });
+        gsap.set(section, { position: 'relative', zIndex: idx + 1 });
         if (section.dataset.scrollSection) {
           gsap.to(section, {
             // TODO: We need to think what would look better here
@@ -83,8 +83,8 @@ export default function Home() {
   return (
     <div>
       <MainSection />
-      <HowItWorksSection />
       <FeatureSection />
+      <HowItWorksSection />
       <CVProcessSection />
       <TemplateSection />
       <StartBuildSection />
