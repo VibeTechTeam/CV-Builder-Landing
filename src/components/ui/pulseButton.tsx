@@ -38,7 +38,7 @@ export const PulseButton = ({
       >
         {/* Ripple effect */}
         <div
-          className='absolute inset-0 rounded-full bg-accent-200 animate-ping opacity-0 group-hover:opacity-75'
+          className='absolute inset-0 rounded-full bg-accent-200 animate-ping opacity-75'
           style={{ animationDuration: '2s' }}
         ></div>
       </span>

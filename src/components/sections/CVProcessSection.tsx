@@ -1,6 +1,9 @@
 import { Typography } from '@/components';
+import { useAnimation } from '@/lib/useAnimation';
 
 export const CVProcessSection = () => {
+  const rootRef = useAnimation();
+
   const process = [
     {
       icon: '/icon-ai.svg',
@@ -30,6 +33,7 @@ export const CVProcessSection = () => {
 
   return (
     <section
+      ref={rootRef}
       data-scroll-section
       id='features'
       className='min-h-[calc(100vh+100px)] flex items-center  bg-white rounded-t-4xl'
@@ -65,6 +69,7 @@ export const CVProcessSection = () => {
             {process.map(({ icon, title, description }, idx) => (
               <div
                 key={idx}
+                data-animate='slide-in-up'
                 className='flex items-center gap-6 p-4 rounded-[32px] hover:shadow-[0px_10px_10px_-5px_rgba(0,0,0,0.04),0px_20px_25px_-5px_rgba(0,0,0,0.1)] transition-shadow duration-300 cursor-pointer'
               >
                 <div className='rounded-[16px] bg-[#e17100] p-4 flex-shrink-0'>
@@ -108,6 +113,7 @@ export const CVProcessSection = () => {
             {process.slice(0, 1).map(({ icon, title, description }, idx) => (
               <div
                 key={idx}
+                data-animate='slide-in-up'
                 className='flex items-start gap-4 p-6 bg-white rounded-[20px] shadow-[0px_4px_12px_rgba(0,0,0,0.08)]'
               >
                 <div className='rounded-[12px] bg-[#e17100] p-3 flex-shrink-0'>

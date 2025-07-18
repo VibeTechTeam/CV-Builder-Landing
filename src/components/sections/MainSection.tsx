@@ -1,8 +1,11 @@
 'use client';
 import Image from 'next/image';
 import { Typography } from '@/components';
+import { useAnimation } from '@/lib/useAnimation';
 
 export const MainSection = () => {
+  const rootRef = useAnimation();
+
   const avatarImages = [
     '/img-person1.png',
     '/img-person2.png',
@@ -12,13 +15,14 @@ export const MainSection = () => {
 
   return (
     <section
+      ref={rootRef}
       data-scroll-section
       className='relative pt-20 pb-28 z-10 min-h-screen flex items-center'
       id='main'
     >
       <div className='relative section-container'>
         <div className='space-y-8 '>
-          <div className='md:max-w-3/4'>
+          <div data-animate='slide-in-left' className='md:max-w-3/4'>
             <Typography as='h1' variant='h1' className='uppercase text-black'>
               Resumes Built
               <br />
@@ -32,7 +36,10 @@ export const MainSection = () => {
             </Typography>
           </div>
 
-          <div className='md:absolute -top-10 -bottom-10 left-1/2 right-0 md:w-[50vw]'>
+          <div
+            data-animate='slide-in-right'
+            className='md:absolute -top-10 -bottom-10 left-1/2 right-0 md:w-[50vw] z-10'
+          >
             <Image
               src='/hero.webp'
               alt='Resume builder interface on laptop'
@@ -44,6 +51,7 @@ export const MainSection = () => {
           </div>
 
           <div
+            data-animate='fade-in'
             className='w-full rounded-[32px] shadow-lg pt-8 pr-10 pb-8 pl-10'
             style={{
               background:
@@ -59,7 +67,10 @@ export const MainSection = () => {
               your dream job with stunning templates.
             </Typography>
 
-            <div className='max-w-[226px] flex items-center gap-3 mb-10 rounded-tl-[32px] rounded-tr-[32px] rounded-br-[32px] rounded-bl-[0px] bg-white pt-3 pr-5 pb-3 pl-5'>
+            <div
+              data-animate='stagger'
+              className='max-w-[226px] flex items-center gap-3 mb-10 rounded-tl-[32px] rounded-tr-[32px] rounded-br-[32px] rounded-bl-[0px] bg-white pt-3 pr-5 pb-3 pl-5'
+            >
               <div className='flex -space-x-2'>
                 {avatarImages.map((src, idx) => (
                   <div
@@ -86,7 +97,7 @@ export const MainSection = () => {
             </div>
 
             <button
-              className='flex items-center justify-center border-4 rounded-[32px] bg-white py-4 px-6 font-medium text-xl leading-none tracking-normal align-middle gap-2 transition hover:bg-orange-50'
+              className='flex items-center justify-center border-4 rounded-[32px] bg-white py-4 px-6 font-medium text-xl leading-none tracking-normal align-middle gap-2 transition hover:bg-orange-50 hover:scale-105 transform duration-300'
               style={{
                 borderColor: 'rgb(225, 113, 0)',
                 fontFamily: 'Montserrat, sans-serif',
@@ -97,7 +108,7 @@ export const MainSection = () => {
                 Create my FREE resume
               </Typography>
               <svg
-                className='mt-1'
+                className='mt-1 transition-transform duration-200 group-hover:translate-x-1'
                 xmlns='http://www.w3.org/2000/svg'
                 width='8'
                 height='12'

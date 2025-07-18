@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Typography } from '@/components';
+import { useAnimation } from '@/lib/useAnimation';
 
 const templates = [
   {
@@ -20,10 +21,10 @@ const templates = [
 ];
 
 export const TemplateSection = () => {
+  const rootRef = useAnimation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
 
   const nextSlide = () => {
     if (currentSlide === templates.length - 1) return;
@@ -61,6 +62,7 @@ export const TemplateSection = () => {
 
   return (
     <section
+      ref={rootRef}
       style={{
         backgroundImage: "url('/how-it-works-bg.jpg')",
       }}
@@ -70,28 +72,35 @@ export const TemplateSection = () => {
       <div className='section-container'>
         <div className='flex flex-col md:flex-row gap-x-8 gap-y-20 items-center md:items-start md:justify-between'>
           {/* Left Content */}
-          <div className='flex-1 max-w-[600px] md:text-left sm:text-center text-left'>
+          <div
+            data-animate='slide-in-left'
+            className='flex-1 max-w-[600px] md:text-left sm:text-center text-left'
+          >
             {/* Main Heading */}
-            <Typography
-              as='h2'
-              variant='h2'
-              className='text-white mb-4 md:mb-8'
-            >
-              Create a <span className='text-accent-500'>resume</span> that gets
-              you <span className='text-accent-500'>hired</span>
-            </Typography>
+            <div data-animate='fade-in'>
+              <Typography
+                as='h2'
+                variant='h2'
+                className='text-white mb-4 md:mb-8'
+              >
+                Create a <span className='text-accent-500'>resume</span> that
+                gets you <span className='text-accent-500'>hired</span>
+              </Typography>
+            </div>
 
             {/* Description */}
-            <Typography
-              as='p'
-              variant='body-lg'
-              className='md:w-3/4 text-white mb-12'
-            >
-              Discover top-performing resume templates trusted by job seekers.
-            </Typography>
+            <div data-animate='fade-in'>
+              <Typography
+                as='p'
+                variant='body-lg'
+                className='md:w-3/4 text-white mb-12'
+              >
+                Discover top-performing resume templates trusted by job seekers.
+              </Typography>
+            </div>
 
             {/* CTA Button */}
-            <button className='btn btn-secondary'>
+            <button className='btn btn-secondary hover:scale-105 transform transition-all duration-300'>
               <Typography as='span' variant='button-md'>
                 Build my resume now
               </Typography>
@@ -107,10 +116,12 @@ export const TemplateSection = () => {
           </div>
 
           {/* Right Content - Resume Template Slider */}
-          <div className='flex-1 max-w-[600px] w-full relative'>
+          <div
+            data-animate='slide-in-right'
+            className='flex-1 max-w-[600px] w-full relative'
+          >
             {/* Slider Container */}
             <div
-              ref={sliderRef}
               className='relative overflow-hidden'
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
@@ -130,7 +141,7 @@ export const TemplateSection = () => {
                       alt='Resume Template'
                       height={600}
                       width={400}
-                      className='rounded-2xl select-none md:w-auto w-4/5'
+                      className='rounded-2xl select-none md:w-auto w-4/5 hover:scale-105 transition-transform duration-300'
                       loading='lazy'
                       draggable={false}
                     />
@@ -143,7 +154,7 @@ export const TemplateSection = () => {
             <button
               disabled={currentSlide === 0}
               onClick={prevSlide}
-              className='absolute left-4 bottom-1/2 bg-white hover:bg-white/50 backdrop-blur-sm text-black p-3 rounded-full transition-all duration-200 group z-10 disabled:opacity-30 disabled:cursor-not-allowed'
+              className='absolute left-4 bottom-1/2 bg-white hover:bg-white/50 backdrop-blur-sm text-black p-3 rounded-full transition-all duration-200 group z-10 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110'
               aria-label='Previous template'
             >
               <svg
@@ -164,7 +175,7 @@ export const TemplateSection = () => {
             <button
               disabled={currentSlide === templates.length - 1}
               onClick={nextSlide}
-              className='absolute right-4 bottom-1/2 bg-white hover:bg-white/50 backdrop-blur-sm text-black p-3 rounded-full transition-all duration-200 group z-10 disabled:opacity-30 disabled:cursor-not-allowed'
+              className='absolute right-4 bottom-1/2 bg-white hover:bg-white/50 backdrop-blur-sm text-black p-3 rounded-full transition-all duration-200 group z-10 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110'
               aria-label='Next template'
             >
               <svg
@@ -193,7 +204,7 @@ export const TemplateSection = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+                  className={`w-3 h-3 rounded-full transition-all duration-200 hover:scale-125 ${
                     currentSlide === index ? 'bg-accent-500' : 'bg-white/30'
                   }`}
                   aria-label={`Go to slide ${index + 1}`}

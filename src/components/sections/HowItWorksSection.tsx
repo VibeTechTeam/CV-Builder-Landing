@@ -1,6 +1,10 @@
+'use client';
 import { Typography } from '@/components';
+import { useAnimation } from '@/lib/useAnimation';
 
 export const HowItWorksSection = () => {
+  const rootRef = useAnimation();
+
   const steps = [
     {
       number: '01',
@@ -24,12 +28,13 @@ export const HowItWorksSection = () => {
 
   return (
     <section
+      ref={rootRef}
       data-scroll-section
       id='how-it-works'
       style={{
         backgroundImage: "url('/how-it-works-bg.jpg')",
       }}
-      className='min-h-[calc(100vh+100px)] flex items-center relative z-30 pt-10 bg-black rounded-t-4xl overflow-hidden bg-contain bg-center py-[145px] bg-size-[150%_150%] md:bg-size-[100%_100%]'
+      className='min-h-[calc(100vh+100px)] flex items-center relative z-30 pt-10 bg-black rounded-t-4xl overflow-hidden bg-center py-[145px] bg-size-[150%_150%] md:bg-size-[100%_100%]'
     >
       {/* Content */}
 
@@ -37,7 +42,7 @@ export const HowItWorksSection = () => {
         {/* Header Section */}
         <div className='flex flex-col lg:flex-row justify-between items-center mb-16 lg:mb-36 gap-x-4 gap-y-6'>
           {/* Main Heading */}
-          <div className='max-w-[580px] w-full'>
+          <div data-animate='slide-in-left' className='max-w-[580px] w-full'>
             <Typography as='h2' variant='h2' className='text-white'>
               Build a Winning <span className='text-accent-500'>Resume</span>
               <br />
@@ -46,7 +51,10 @@ export const HowItWorksSection = () => {
           </div>
 
           {/* Description */}
-          <div className='max-w-[580px] text-left lg:text-right'>
+          <div
+            data-animate='slide-in-right'
+            className='max-w-[580px] text-left lg:text-right'
+          >
             <Typography as='p' variant='body-lg' className='text-white'>
               Craft your perfect resume with AI-enhanced suggestions,
               customizable templates, and a process so simple, it feels like
@@ -56,7 +64,10 @@ export const HowItWorksSection = () => {
         </div>
 
         {/* Steps Section */}
-        <div className='flex flex-col lg:flex-row justify-center gap-4'>
+        <div
+          className='flex flex-col lg:flex-row justify-center gap-4'
+          data-animate='stagger'
+        >
           {steps.map((step, index) => (
             <div
               key={index}
