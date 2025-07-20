@@ -4,8 +4,8 @@ import {
   StartBuildSection,
   TemplateSection,
   FeatureSection,
+  QuestionsSection
 } from "@/components";
-
 export default function Home() {
   return (
     <div>
@@ -14,6 +14,7 @@ export default function Home() {
       <FeatureSection />
       <TemplateSection />
       <StartBuildSection />
+      <QuestionsSection/>
     </div>
   );
 }
