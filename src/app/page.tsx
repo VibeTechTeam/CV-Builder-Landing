@@ -4,7 +4,7 @@ import {
   StartBuildSection,
   TemplateSection,
   FeatureSection,
-  QuestionsSection
+  QuestionsSection,
 } from "@/components";
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
       <HowItWorksSection />
       <FeatureSection />
       <TemplateSection />
+      <QuestionsSection />
       <StartBuildSection />
-      <QuestionsSection/>
     </div>
   );
 }

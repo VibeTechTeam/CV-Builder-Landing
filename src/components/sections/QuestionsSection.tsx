@@ -44,7 +44,7 @@ export const QuestionsSection = () => {
         </div>
         <div className='flex flex-col justify-center pr-[16px] pl-[16px] mb-6 w-full max-w-[1184px]'>
           {faqItems.map((item, index) => (
-            <div key={index} className='border-b-1 border-white-first'>
+            <div key={index} className='border-b-1 border-zinc-100'>
               <div
                 className='flex items-center justify-between cursor-pointer'
                 onClick={() => toggleAccordion(index)}

@@ -18,6 +18,8 @@
 @layer base {
   :root {
     --content-width: 1360px;
+    --font-noto-sans: "Noto Sans", sans-serif;
+    --breakpoint-xl1440: 90rem;
   }
 
   .section-container {
@@ -27,15 +29,14 @@
     cursor: pointer;
   }
   @media (max-width: 1200px) {
-  .hide-below-1200 {
-    display: none;
+    .hide-below-1200 {
+      display: none;
+    }
+    .img-responsive {
+      width: 80%;
+      height: auto;
+    }
   }
-  .img-responsive {
-    width: 80%;
-    height: auto;
-  }
-}
-
 }
 
 @layer components {
