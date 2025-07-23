@@ -1,47 +1,55 @@
+import { Typography } from '@/components';
+
 export const CVProcessSection = () => {
   const process = [
     {
-      icon: "/icon-ai.svg",
-      title: "AI content Suggestions",
+      icon: '/icon-ai.svg',
+      title: 'AI content Suggestions',
       description:
-        "Get smart recommendations for skills, summaries, and bullet points tailored to your industry.",
+        'Get smart recommendations for skills, summaries, and bullet points tailored to your industry.',
     },
     {
-      icon: "/icon-palette.svg",
-      title: "Professional templates",
+      icon: '/icon-palette.svg',
+      title: 'Professional templates',
       description:
-        "Access a wide range of modern, ATS-optimised templates designed by experts.",
+        'Access a wide range of modern, ATS-optimised templates designed by experts.',
     },
     {
-      icon: "/icon-pdf.svg",
-      title: "One-click PDF export",
+      icon: '/icon-pdf.svg',
+      title: 'One-click PDF export',
       description:
-        "Download your resume in a universally accepted PDF format, ready for applications.",
+        'Download your resume in a universally accepted PDF format, ready for applications.',
     },
     {
-      icon: "/icon-phone.svg",
-      title: "Multi-device access",
+      icon: '/icon-phone.svg',
+      title: 'Multi-device access',
       description:
-        "Build and edit your resume anytime, anywhere, or any device.",
+        'Build and edit your resume anytime, anywhere, or any device.',
     },
   ];
 
   return (
-    <section id='features'>
+    <section
+      data-scroll-section
+      id='features'
+      className='min-h-[calc(100vh+100px)] flex items-center  bg-white rounded-t-4xl'
+    >
       <div className='section-container py-[80px] px-4'>
         {/* Desktop */}
         <div className='hidden lg:flex items-center gap-10'>
           <div className='flex flex-col gap-8 w-full max-w-[650px]'>
-            <h2 className='text-[#020618] font-[Noto Sans] text-[48px] font-semibold leading-[48px]'>
+            <Typography as='h2' variant='h2' className='text-[#020618]'>
               Foliofy Gives You the Edge
-            </h2>
-            <p className='text-[#62748e] font-[Ubuntu] text-[24px] font-normal leading-[32px]'>
+            </Typography>
+            <Typography as='p' variant='body-lg' className='text-[#62748e]'>
               Unlock a suite of powerful tools crafted to help your resume stand
               out, showcase your strengths,
               <br /> and leave a lasting impression on employers.
-            </p>
+            </Typography>
             <button className='flex items-center justify-center gap-2 text-white rounded-[32px] bg-[#e17100] opacity-80 py-4 px-6 max-w-[198px] w-full font-[Ubuntu] font-bold text-xl leading-7 tracking-normal text-center'>
-              <span>Start NOW</span>
+              <Typography as='span' variant='button-md'>
+                Start NOW
+              </Typography>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='8'
@@ -63,12 +71,16 @@ export const CVProcessSection = () => {
                   <img src={icon} alt={`Icon ${title}`} />
                 </div>
                 <div className='flex flex-col gap-2'>
-                  <h4 className='font-[Ubuntu] font-bold text-[28px] leading-[28px]'>
+                  <Typography as='h4' variant='h4' className='text-[#020618]'>
                     {title}
-                  </h4>
-                  <p className='text-[#62748E] font-[Ubuntu] font-normal text-[20px] leading-[28px]'>
+                  </Typography>
+                  <Typography
+                    as='p'
+                    variant='body-md'
+                    className='text-[#62748E]'
+                  >
                     {description}
-                  </p>
+                  </Typography>
                 </div>
               </div>
             ))}
@@ -78,15 +90,19 @@ export const CVProcessSection = () => {
         {/* Mobile */}
         <div className='lg:hidden flex flex-col'>
           <div className='flex flex-col gap-6 text-center mb-8'>
-            <h2 className='text-[#020618] font-[Noto Sans] text-[32px] sm:text-[36px] font-semibold leading-[36px] sm:leading-[40px]'>
-              Foliofy <span className='text-[#e17100]'>Gives</span> You the{" "}
+            <Typography as='h2' variant='h3' className='text-[#020618]'>
+              Foliofy <span className='text-[#e17100]'>Gives</span> You the{' '}
               <span className='text-[#e17100]'>Edge</span>
-            </h2>
-            <p className='text-[#62748e] font-[Ubuntu] text-[18px] sm:text-[20px] font-normal leading-[26px] sm:leading-[28px] px-4'>
+            </Typography>
+            <Typography
+              as='p'
+              variant='body-md'
+              className='text-[#62748e] px-4'
+            >
               Unlock a suite of powerful tools crafted to help your resume stand
               out, showcase your strengths, and leave a lasting impression on
               employers.
-            </p>
+            </Typography>
           </div>
           <div className='flex flex-col gap-6 mb-8'>
             {process.slice(0, 1).map(({ icon, title, description }, idx) => (
@@ -98,12 +114,16 @@ export const CVProcessSection = () => {
                   <img src={icon} alt={`Icon ${title}`} className='w-6 h-6' />
                 </div>
                 <div className='flex flex-col gap-2'>
-                  <h4 className='font-[Ubuntu] font-bold text-[20px] leading-[24px] text-[#020618]'>
+                  <Typography as='h4' variant='h5' className='text-[#020618]'>
                     {title}
-                  </h4>
-                  <p className='text-[#62748E] font-[Ubuntu] font-normal text-[16px] leading-[22px]'>
+                  </Typography>
+                  <Typography
+                    as='p'
+                    variant='body-sm'
+                    className='text-[#62748E]'
+                  >
                     {description}
-                  </p>
+                  </Typography>
                 </div>
               </div>
             ))}
@@ -117,7 +137,9 @@ export const CVProcessSection = () => {
           </div>
           <div className='flex justify-center'>
             <button className='flex items-center justify-center gap-2 text-white rounded-[32px] bg-[#e17100] opacity-80 py-4 px-6 max-w-[198px] w-full font-[Ubuntu] font-bold text-xl leading-7 tracking-normal text-center'>
-              <span>Start NOW</span>
+              <Typography as='span' variant='button-md'>
+                Start NOW
+              </Typography>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='8'

@@ -1,20 +1,25 @@
-"use client";
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
+import { Typography } from '@/components';
 
 export const MainSection = () => {
   const avatarImages = [
-    "/img-person1.png",
-    "/img-person2.png",
-    "/img-person3.png",
-    "/img-person4.png",
+    '/img-person1.png',
+    '/img-person2.png',
+    '/img-person3.png',
+    '/img-person4.png',
   ];
 
   return (
-    <section className='relative pt-20 pb-28 z-10' id='main'>
+    <section
+      data-scroll-section
+      className='relative pt-20 pb-28 z-10 min-h-screen flex items-center'
+      id='main'
+    >
       <div className='relative section-container'>
         <div className='space-y-8 '>
-          <div className='max-w-1/2'>
-            <h1 className='font-bold text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase text-black'>
+          <div className='md:max-w-3/4'>
+            <Typography as='h1' variant='h1' className='uppercase text-black'>
               Resumes Built
               <br />
               <span className='flex flex-wrap items-center gap-4'>
@@ -24,20 +29,35 @@ export const MainSection = () => {
                   With AI
                 </span>
               </span>
-            </h1>
+            </Typography>
+          </div>
+
+          <div className='md:absolute -top-10 -bottom-10 left-1/2 right-0 md:w-[50vw]'>
+            <Image
+              src='/hero.webp'
+              alt='Resume builder interface on laptop'
+              width={640}
+              height={650}
+              className='object-cover object-left h-full w-auto'
+              priority
+            />
           </div>
 
           <div
             className='w-full rounded-[32px] shadow-lg pt-8 pr-10 pb-8 pl-10'
             style={{
               background:
-                "linear-gradient(29.26deg, rgb(255, 212, 160) 2.358%, rgb(255, 234, 208) 31.415%, rgb(255, 255, 255) 113.154%)",
+                'linear-gradient(29.26deg, rgb(255, 212, 160) 2.358%, rgb(255, 234, 208) 31.415%, rgb(255, 255, 255) 113.154%)',
             }}
           >
-            <p className='max-w-1/2 w-full text-[#020618] font-light text-[28px] leading-[56px] tracking-normal mb-10'>
+            <Typography
+              as='p'
+              variant='body-xl'
+              className='md:max-w-1/2 w-full text-[#020618] mb-10'
+            >
               Create standout resumes in minutes with AI-driven insights. Land
               your dream job with stunning templates.
-            </p>
+            </Typography>
 
             <div className='max-w-[226px] flex items-center gap-3 mb-10 rounded-tl-[32px] rounded-tr-[32px] rounded-br-[32px] rounded-bl-[0px] bg-white pt-3 pr-5 pb-3 pl-5'>
               <div className='flex -space-x-2'>
@@ -56,18 +76,26 @@ export const MainSection = () => {
                   </div>
                 ))}
               </div>
-              <p className='text-gray-600 font-medium'>+500</p>
+              <Typography
+                as='p'
+                variant='body-md'
+                className='text-gray-600 font-medium'
+              >
+                +500
+              </Typography>
             </div>
 
             <button
               className='flex items-center justify-center border-4 rounded-[32px] bg-white py-4 px-6 font-medium text-xl leading-none tracking-normal align-middle gap-2 transition hover:bg-orange-50'
               style={{
-                borderColor: "rgb(225, 113, 0)",
-                fontFamily: "Montserrat, sans-serif",
+                borderColor: 'rgb(225, 113, 0)',
+                fontFamily: 'Montserrat, sans-serif',
               }}
               aria-label='Create your free resume'
             >
-              <span>Create my FREE resume</span>
+              <Typography as='span' variant='button-lg'>
+                Create my FREE resume
+              </Typography>
               <svg
                 className='mt-1'
                 xmlns='http://www.w3.org/2000/svg'
@@ -83,17 +111,6 @@ export const MainSection = () => {
               </svg>
             </button>
           </div>
-        </div>
-
-        <div className='absolute bottom-0 left-1/2 w-[50vw]'>
-          <Image
-            src='/img-laptop.png'
-            alt='Resume builder interface on laptop'
-            width={640}
-            height={650}
-            className='object-contain h-full'
-            priority
-          />
         </div>
       </div>
     </section>
